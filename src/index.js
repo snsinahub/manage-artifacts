@@ -1,7 +1,7 @@
-const github = require('@actions/github');
-const core = require('@actions/core');
-const fs = require('fs');
-const Artifacts = require('./utils/artifacts.js');
+import github from '@actions/github';
+import core from '@actions/core';
+import fs from 'fs';
+import Artifacts from './utils/artifacts.js';
 
 async function run() {
     // Inputs

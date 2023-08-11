@@ -1,8 +1,8 @@
 'use strict';
 
 
-const _ = require('lodash');
-const { Octokit } = require("@octokit/rest");
+import _ from 'lodash';
+import Octokit from "@octokit/rest";
 import fetch from 'node-fetch';
 
 
