@@ -2,7 +2,7 @@
 
 
 import _ from 'lodash';
-import Octokit from "@octokit/rest";
+import { Octokit } from '@octokit/rest';
 import fetch from 'node-fetch';
 
 
