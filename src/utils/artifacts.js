@@ -3,6 +3,8 @@
 
 const _ = require('lodash');
 const { Octokit } = require("@octokit/rest");
+import fetch from "node-fetch";
+
 
 
 module.exports = class Artifacts {
@@ -10,7 +12,10 @@ module.exports = class Artifacts {
     constructor(token) {
         this.token = token;
         this.ops = {
-            auth: this.token
+            auth: this.token,
+            request: {
+                fetch: fetch,
+            }
         }
         this.octokit = new Octokit(this.ops);
     }
