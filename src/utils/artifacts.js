@@ -22,7 +22,7 @@ export default class Artifacts {
     }
  
     async getArtifacts(owner, repo) {
-        await this.octokit.request('GET /repos/{owner}/{repo}/actions/artifacts', {
+        return await this.octokit.request('GET /repos/{owner}/{repo}/actions/artifacts', {
             owner: owner,
             repo: repo,
             headers: {
