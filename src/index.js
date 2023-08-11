@@ -1,7 +1,6 @@
 const github = require('@actions/github');
 const core = require('@actions/core');
 const fs = require('fs');
-const getTags = require('./utils/get-tags.js');
 const Artifacts = require('./utils/artifacts.js');
 
 async function run() {
