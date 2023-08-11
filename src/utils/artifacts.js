@@ -8,7 +8,7 @@ import fetch from 'node-fetch';
 
 
 
-module.exports = class Artifacts {
+export default class Artifacts {
 
     constructor(token) {
         this.token = token;
