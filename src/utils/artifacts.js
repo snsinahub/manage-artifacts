@@ -23,8 +23,8 @@ export default class Artifacts {
  
     async getArtifacts(owner, repo) {
         await this.octokit.request('GET /repos/{owner}/{repo}/actions/artifacts', {
-            owner: 'OWNER',
-            repo: 'REPO',
+            owner: owner,
+            repo: repo,
             headers: {
                 'X-GitHub-Api-Version': '2022-11-28'
             }
