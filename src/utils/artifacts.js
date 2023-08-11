@@ -16,7 +16,7 @@ module.exports = class Artifacts {
     }
  
     async getArtifacts(owner, repo) {
-        await octokit.request('GET /repos/{owner}/{repo}/actions/artifacts', {
+        await this.octokit.request('GET /repos/{owner}/{repo}/actions/artifacts', {
             owner: 'OWNER',
             repo: 'REPO',
             headers: {
